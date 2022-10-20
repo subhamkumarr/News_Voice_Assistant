@@ -8,6 +8,7 @@ import classNames from 'classnames';
 
 import useStyles from './styles.js';
 
+import Imge from'./AI-Robot.jpg';  
 const alanKey = '807310d6e28ea14fcaeb85f314e91c4d2e956eca572e1d8b807a3e2338fdd0dc/stage';
 
 // for updating the useeffect once the app starts
@@ -53,7 +54,7 @@ const App= ()=>{
     return (
         <div>
             <div className= {classes.logoContainer}>
-                <img src="https://alan.app/voie/images/previews/preview.jpg" className={classes.alanLogo} alt="alan logo"/>
+                <img src={Imge} className={classes.alanLogo} alt="alan logo"/>
             </div>
            <NewsCards articles = {newsArticles} activeArticle= {activeArticle}/>
         </div>
